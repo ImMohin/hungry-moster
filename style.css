@@ -1,3 +1,36 @@
+* {box-sizing: border-box;}
+input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: center;
+    width: 50%;
+    background: #f1f1f1;
+}
+.block-center{
+
+}
+button {
+    float: left;
+    width: 10%;
+    float: center;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+
+/* .inputSearch {
+    margin: auto;
+    display: block;
+  } */
+
+/* .foodSec{
+    margin-top: 100px;
+} */
 #meals{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -7,7 +40,7 @@
     border: 1px solid royalblue;
     border-radius: 20px;
     padding: 20px;
-    margin: 10px;
+    margin: 50px;
     width: 350px;
     text-align: center;
 }
