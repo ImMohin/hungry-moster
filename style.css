@@ -35,24 +35,27 @@ button {
 } */
 #meals{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2px;
 }
 .meal{
-    border: 1px solid royalblue;
+    border: 1px solid gray;
     border-radius: 20px;
     padding: 20px;
-    margin: 50px;
-    width: 350px;
+    margin: 20px;
+    width: 250px;
     text-align: center;
+    background-color:honeydew;
 }
 
 .meal-name{
     font-size: 20px;
     color: magenta;
+    padding-top: 20px;
+
 }
 
 #thumbImg{
-    width: 300px;
+    width: 200px;
     border-radius: 20px;
 }

@@ -1,14 +1,10 @@
 
 const search = document.getElementById('search');
-
-search.addEventListener('keypress', (event) => {
-    let searchFor = event.target.value;
-    let filteredFood;
-    filteredFood = meals.meals.filter((food) => {
-        return food.strMeal.toLowerCase().includes(searchFor);
-    });
-    meals(filteredFood);
-    console.log(filteredFood);
+search.addEventListener('keyup', (event) => {
+    let searchOn = event.target.value;
+    console.log(searchOn);
+    
+  
 });
 
 fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
