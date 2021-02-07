@@ -1,5 +1,15 @@
 
+const search = document.getElementById('search');
 
+search.addEventListener('keypress', (event) => {
+    let searchFor = event.target.value;
+    let filteredFood;
+    filteredFood = meals.meals.filter((food) => {
+        return food.strMeal.toLowerCase().includes(searchFor);
+    });
+    meals(filteredFood);
+    console.log(filteredFood);
+});
 
 fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
 //https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
