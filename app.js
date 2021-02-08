@@ -4,7 +4,6 @@ search.addEventListener('keyup', (event) => {
     let searchOn = event.target.value;
     console.log(searchOn);
     
-  
 });
 
 fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
